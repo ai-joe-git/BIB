@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Bouclier IA Belge</title>
+  <title>LIVAI</title>
   <style>
     /* General Styles */
     :root {
@@ -75,7 +75,7 @@
       justify-content: center;
       align-items: center;
       text-align: center;
-      background: url('bg.jpg') no-repeat center center/cover; /* Use bg.jpg as background */
+      background: url('bg.jpg') no-repeat center center/cover;
       color: white;
     }
 
@@ -102,6 +102,22 @@
 
     .hero button:hover {
       background: var(--button-hover);
+    }
+
+    /* Logo with Floating Animation */
+    .logo {
+      width: 100px; /* Adjust size as needed */
+      height: auto;
+      animation: float 3s ease-in-out infinite;
+    }
+
+    @keyframes float {
+      0%, 100% {
+        transform: translateY(0);
+      }
+      50% {
+        transform: translateY(-10px);
+      }
     }
 
     /* Sections */
@@ -140,6 +156,10 @@
       color: white;
       text-align: center;
       padding: 20px;
+    }
+
+    footer p {
+      margin: 5px 0;
     }
 
     /* Dark Mode Toggle Button */
@@ -195,7 +215,9 @@
   <!-- Hero Section -->
   <section class="hero">
     <div class="glass">
-      <h1>Bouclier IA Belge</h1>
+      <!-- Logo with Floating Animation -->
+      <img src="logo.png" alt="LIVAI Logo" class="logo">
+      <h1>LIVAI</h1>
       <p>La Confiance et la Sécurité au Cœur de l'Intelligence Artificielle</p>
       <button onclick="window.location.href='https://web-llm-chat-omega.vercel.app/'">Découvrez Notre Solution</button>
     </div>
@@ -206,7 +228,7 @@
     <h2>Les Défis de l'IA : Sécurité, Confidentialité et Conformité</h2>
     <div class="glass">
       <p>
-        Les IA génératives actuelles soulèvent des préoccupations majeures en matière de sécurité des données, de respect de la vie privée et de conformité réglementaire. Face à ces défis, <strong>Bouclier IA Belge</strong> propose une solution innovante et sécurisée, entièrement hébergée en Belgique, pour garantir la confiance et la transparence.
+        Les IA génératives actuelles soulèvent des préoccupations majeures en matière de sécurité des données, de respect de la vie privée et de conformité réglementaire. Face à ces défis, <strong>LIVAI</strong> propose une solution innovante et sécurisée, entièrement hébergée en Belgique, pour garantir la confiance et la transparence.
       </p>
     </div>
   </section>
@@ -259,7 +281,7 @@
     <h2>Analyse du Marché</h2>
     <div class="glass">
       <p>
-        Le marché de l'IA est en pleine expansion, avec une demande croissante pour des solutions sécurisées et conformes. Les secteurs réglementés, tels que la finance, la santé et le juridique, représentent une opportunité majeure pour <strong>Bouclier IA Belge</strong>.
+        Le marché de l'IA est en pleine expansion, avec une demande croissante pour des solutions sécurisées et conformes. Les secteurs réglementés, tels que la finance, la santé et le juridique, représentent une opportunité majeure pour <strong>LIVAI</strong>.
       </p>
     </div>
   </section>
@@ -284,7 +306,7 @@
     <h2>Investissons Ensemble dans un Avenir Numérique Responsable</h2>
     <div class="glass">
       <p>
-        Rejoignez-nous dans cette aventure innovante et ambitieuse. Contactez-nous pour discuter de la manière dont vous pouvez contribuer au succès de <strong>Bouclier IA Belge</strong>.
+        Rejoignez-nous dans cette aventure innovante et ambitieuse. Contactez-nous pour discuter de la manière dont vous pouvez contribuer au succès de <strong>LIVAI</strong>.
       </p>
       <button>Contactez-Nous</button>
     </div>
@@ -292,7 +314,10 @@
 
   <!-- Footer -->
   <footer>
-    <p>&copy; 2023 Bouclier IA Belge. Tous droits réservés.</p>
+    <p>Livam (SRL)</p>
+    <p>BE 0687.992.294</p>
+    <p>Rond-point Robert Schuman 2-4, 1040 Bruxelles</p>
+    <p>&copy; 2023 LIVAI. Tous droits réservés.</p>
   </footer>
 
   <!-- JavaScript for Dark Mode and Smooth Transitions -->
